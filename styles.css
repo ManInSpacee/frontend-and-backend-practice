@@ -103,6 +103,7 @@ body {
     border-left: 5px solid #667eea;
     font-size: 16px;
     line-height: 1.8;
+    max-width: 800px;
 }
 
 /* ===== НАВЫКИ ===== */
@@ -172,6 +173,124 @@ body {
     margin-top: 50px;
 }
 
+
+.news-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.news-item {
+    min-width: 600px;
+    max-width: 900px;
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border-left: 4px solid #667eea;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateX(5px);
+}
+
+.catalog {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.catalog-item {
+    height: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+
+.products-container {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    gap: 15px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    width: 200px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-20px);
+}
+
+.products-title, .contacts-block-title, .news-title{
+    text-align: center;
+    font-weight: 400;
+    color: #424242;
+    margin-top: 30px;
+}
+
+.product-title {
+    font-weight: 500;
+    text-align: center;
+}
+
+.product-img {
+    width: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    height: 200px;
+}
+
+.contacts-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-block-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 60px;
+    width: 800px;
+    font-weight: 500;
+    background: linear-gradient(135deg, #f4f4f4 0%, #e1e1e1 100%);
+    color: #424242;
+    border-radius: 15px;
+
+}
+
+.contacts-block-btn {
+    background: linear-gradient(135deg, #00a7ff 0%, #7b00ff 100%);
+    height: 40px;
+    width: 120px;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    margin: 20px;
+
+}
+
 img {
     width: 100px;
 }
+
+
