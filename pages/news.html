@@ -1,59 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Семестровая работа</title>
 	<link rel="stylesheet" href="../assets/styles.css">
-	<title>Title</title>
 </head>
 <body>
 <div class="page-container">
-<!-- HEADER -->
-	<div class="header">HEADER</div>
-	<header>
-		<div class="nav">
-			<ul class="nav-list">
-				<li class="nav-item">
-					<a class="nav-link" href="../index.html">Главная</a></li>
-				<li class="nav-item">
-					<a class="nav-link" href="news.html">Новости</a></li>
-				<li class="nav-item">
-					<a class="nav-link" href="practices.html">Практики</a></li>
-				<li class="nav-item">
-					<a class="nav-link" href="goods.html">Товары</a></li>
-				<li class="nav-item">
-					<a class="nav-link" href="contacts.html">Контакты</a></li>
-			</ul>
-		</div>
+
+	<!-- HEADER -->
+	<header class="header">
+		<h1 class="header__title">HEADER</h1>
 	</header>
-<!-- MAIN -->
-	<main>
-		<h1 class="news-title">Новости</h1>
-		<div class="news-container">
-			<div class="news-item">
-				<h2 class="news-item-title">Новая видеокарта NVIDIA</h2>
-				<p class="news-item-author">25 сентября 2025 • Автор: Иван Иванов</p>
-				<p class="news-item-desc">Сегодня компания NVIDIA представила новую линейку видеокарт...</p>
-			</div>
 
-			<div class="news-item">
-				<h2 class="news-item-title">Выход Windows 12</h2>
-				<p class="news-item-author">20 сентября 2025 • Автор: Мария Смирнова</p>
-				<p class="news-item-desc">Microsoft анонсировала новую операционную систему Windows 12...</p>
-			</div>
+	<!-- NAVIGATION -->
+	<nav class="nav">
+		<ul class="nav__list">
+			<li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+			<li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+			<li class="nav__item"><a class="nav__link" href="practices.html">Практики</a></li>
+			<li class="nav__item"><a class="nav__link" href="goods.html">Товары</a></li>
+			<li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+		</ul>
+	</nav>
 
-			<div class="news-item">
-				<h2 class="news-item-title">SpaceX запустила ракету</h2>
-				<p class="news-item-author">15 сентября 2025 • Автор: SpaceNews</p>
-				<p class="news-item-desc">Сегодня SpaceX успешно запустила ракету Falcon 9 с 60 спутниками...</p>
+	<!-- MAIN CONTENT -->
+	<main class="main">
+		<div class="news">
+			<h2 class="news__title">Новости</h2>
+			<div class="news__card">
+				<h3 class="news__item-title">Новая видеокарта NVIDIA</h3>
+				<p class="news__item-desc">Сегодня компания NVIDIA представила новую линейку видеокарт...</p>
+			</div>
+			<div class="news__card">
+				<h3 class="news__item-title">Выход Windows 12</h3>
+				<p class="news__item-author">20 сентября 2025 • Автор: Мария Смирнова</p>
+			</div>
+			<div class="news__card">
+				<h3 class="news__item-title">SpaceX запустила ракету</h3>
+				<p class="news__item-author">15 сентября 2025 • Автор: SpaceNews</p>
 			</div>
 		</div>
+
 	</main>
-<!-- FOOTER -->
-	<footer>
-		<div class="footer">Футер</div>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer__text">Футер</div>
 	</footer>
+
 </div>
 </body>
 </html>
-
-

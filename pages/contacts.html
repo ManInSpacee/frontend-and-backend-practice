@@ -2,43 +2,39 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../assets/styles.css">
-	<title>Title</title>
+	<title>Контакты</title>
 </head>
 <body>
 <div class="page-container">
-<!-- HEADER -->
-	<div class="header">HEADER</div>
-	<header>
-		<div class="nav">
-			<ul class="nav-list">
-				<li class="nav-item">
-					<a class="nav-link" href="../index.html">Главная</a></li>
-				<li class="nav-item">
-					<a class="nav-link" href="news.html">Новости</a></li>
-				<li class="nav-item">
-					<a class="nav-link" href="practices.html">Практики</a></li>
-				<li class="nav-item">
-					<a class="nav-link" href="goods.html">Товары</a></li>
-				<li class="nav-item">
-					<a class="nav-link" href="contacts.html">Контакты</a></li>
-			</ul>
-		</div>
+	<!-- HEADER -->
+	<header class="header">
+		<h1 class="header__title">HEADER</h1>
 	</header>
+	<nav class="nav">
+		<ul class="nav__list">
+			<li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+			<li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+			<li class="nav__item"><a class="nav__link" href="practices.html">Практики</a></li>
+			<li class="nav__item"><a class="nav__link" href="goods.html">Товары</a></li>
+			<li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+		</ul>
+	</nav>
 
-<!-- MAIN -->
-	<main>
-		<h1 class="contacts-block-title">Контакты</h1>
-		<div class="contacts-block">
-			<p class="contacts-block-item">Адрес электронной почты: klimentmart@gmail.com</p>
-			<p class="contacts-block-item">Адрес: г. Москва, ул. Примерная, д. 10</p>
-			<button class="contacts-block-btn" onclick="alert('Мы скоро вам перезвоним')">Позвонить мне</button>
+	<!-- MAIN -->
+	<main class="main">
+		<h1 class="contacts__title">Контакты</h1>
+		<div class="contacts">
+			<p class="contacts__item">Адрес электронной почты: klimentmart@gmail.com</p>
+			<p class="contacts__item">Адрес: г. Москва, ул. Примерная, д. 10</p>
+			<button class="contacts__btn" onclick="alert('Мы скоро вам перезвоним')">Позвонить мне</button>
 		</div>
 	</main>
 
-<!-- FOOTER -->
-	<footer>
-		<div class="footer">Футер</div>
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer__text">Футер</div>
 	</footer>
 </div>
 </body>
