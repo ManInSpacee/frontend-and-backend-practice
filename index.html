@@ -12,14 +12,15 @@
 	<!-- HEADER -->
 	<header class="header">
 		<h1 class="header__title">HEADER</h1>
+		<button class="btn-theme" id="theme-toggle">🌙</button>
 	</header>
 
 	<!-- NAVIGATION -->
 	<nav class="nav">
 		<ul class="nav__list">
-			<li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+			<li class="nav__item nav__item--active"><a class="nav__link " href="index.html">Главная</a></li>
 			<li class="nav__item"><a class="nav__link" href="pages/news.html">Новости</a></li>
-			<li class="nav__item"><a class="nav__link" href="pages/practices.html">Практики</a></li>
+			<li class="nav__item nav__item--disabled"><a class="nav__link" href="pages/practices.html">Практики</a></li>
 			<li class="nav__item"><a class="nav__link" href="pages/goods.html">Товары</a></li>
 			<li class="nav__item"><a class="nav__link" href="pages/contacts.html">Контакты</a></li>
 		</ul>
@@ -53,16 +54,16 @@
 		<div class="experience">
 			<h2 class="experience__title">Мой опыт работы</h2>
 			<div class="experience__card">
+				<h3 class="experience__position">Стажировка в IT-компании</h3>
+				<p class="experience__description">Участвовал в командной разработке, занимался тестированием и отладкой кода.</p>
+			</div>
+			<div class="experience__card">
 				<h3 class="experience__position">Frontend-разработчик</h3>
 				<p class="experience__description">Разрабатывал адаптивные сайты с использованием HTML, CSS и JavaScript.</p>
 			</div>
 			<div class="experience__card">
 				<h3 class="experience__position">Backend-разработчик</h3>
 				<p class="experience__description">Создавал серверные приложения и базы данных на C# и SQL.</p>
-			</div>
-			<div class="experience__card">
-				<h3 class="experience__position">Стажировка в IT-компании</h3>
-				<p class="experience__description">Участвовал в командной разработке, занимался тестированием и отладкой кода.</p>
 			</div>
 		</div>
 
@@ -75,4 +76,5 @@
 
 </div>
 </body>
+<script src="./index.js" defer></script>
 </html>

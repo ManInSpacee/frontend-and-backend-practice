@@ -3,6 +3,19 @@ const openBtn = document.getElementById('OpenBtn');
 const closeBtn = document.getElementById('CloseBtn');
 const submitBtn = document.getElementById('SubmitBtn');
 const form = document.getElementById('feedbackForm');
+const themeToggle = document.getElementById('theme-toggle');
+const main = document.getElementsByName('main')
+
+themeToggle.addEventListener('click', () => {
+  themeToggle.classList.toggle('active');
+  if (themeToggle.classList.contains('active')) {
+    document.body.classList.add('dark-theme')
+    themeToggle.textContent = '☀️';
+  } else {
+    document.body.classList.remove('dark-theme')
+    themeToggle.textContent = '🌙';
+  }
+})
 
 
 openBtn.addEventListener('click', () => {
@@ -41,3 +54,4 @@ submitBtn.addEventListener('click', () => {
 
   form.reset();
 });
+
