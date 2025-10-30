@@ -1,81 +1,192 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Семестровая работа</title>
-	<link rel="stylesheet" href="assets/styles.css">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/test_styles.css">
+
 </head>
-<body>
-<div class="page-container">
+<body class="bg-light">
 
-	<!-- HEADER -->
-	<header class="header">
-		<h1 class="header__title">HEADER</h1>
-		<button class="btn-theme" id="theme-toggle">🌙</button>
-	</header>
+<header class="bg-primary text-white py-4">
+	<div class="container d-flex justify-content-between align-items-center">
+		<a  href="#" class="text-white text-decoration-none">
+			<h1 class="fw-medium fs-2 mb-1">Мой портфолио</h1>
+			<p class="fw-light fs-5 mb-0">Студент разработчик</p>
+		</a>
+		<span class="bg-white text-primary rounded-3 px-1 py-0 fw-semibold">ЭФБО-12-24</span>
+	</div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+	<div class="container">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-	<!-- NAVIGATION -->
-	<nav class="nav">
-		<ul class="nav__list">
-			<li class="nav__item nav__item--active"><a class="nav__link " href="index.html">Главная</a></li>
-			<li class="nav__item"><a class="nav__link" href="pages/news.html">Новости</a></li>
-			<li class="nav__item nav__item--disabled"><a class="nav__link" href="pages/practices.html">Практики</a></li>
-			<li class="nav__item"><a class="nav__link" href="pages/goods.html">Товары</a></li>
-			<li class="nav__item"><a class="nav__link" href="pages/contacts.html">Контакты</a></li>
-		</ul>
-	</nav>
-
-	<!-- MAIN CONTENT -->
-	<main class="main">
-
-		<!-- PROFILE -->
-		<div class="profile">
-			<img class="profile__photo" src="assets/images/photo.png" alt="Фото автора">
-			<div class="profile__box">
-				<h2 class="profile__name">Мартыненко Климент</h2>
-				<p class="profile__group">ЭФБО-12-24</p>
-			</div>
-
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link active" href="#"><i class="bi bi-house"></i> Главная</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="bi bi-newspaper"></i> Новости</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="bi bi-code-slash"></i> Практики</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="pages/goods.html"><i class="bi bi-cart"></i> Товары</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="bi bi-phone"></i> Контакты</a>
+				</li>
+			</ul>
 		</div>
+	</div>
+</nav>
 
-		<!-- ABOUT ME -->
-		<div class="about">
-			<h2 class="about__title">Обо мне</h2>
-			<p class="about__text">Студент, увлекаюсь веб-разработкой. Изучаю CSS, HTML, Javascript...
-				Люблю создавать красивые и функциональные сайты</p>
-		</div>
-
-		<!-- SKILLS -->
-		<h2 class="skills__title">Мои навыки</h2>
-		<div class="skills">
-			<div class="skills__item skills__item--html">HTML</div>
-			<div class="skills__item skills__item--css">CSS</div>
-			<div class="skills__item skills__item--js">JS</div>
-		</div>
-
-		<!-- EXPERIENCE -->
-		<h2 class="experience__title">Проекты</h2>
-		<div class="experience">
-			<div class="experience__card">
-				<h3 class="experience__position">Личный сайт</h3>
-				<p class="experience__description">Сайт-портфолио на html+css+js</p>
-			</div>
-			<div class="experience__card">
-				<h3 class="experience__position">Todo приложение</h3>
-				<p class="experience__description">Простое приложение для планировки задач.</p>
+<main class="container">
+	<div class="bg-white shadow-sm rounded-2 mt-4 px-5 py-3 border">
+		<div class="d-flex align-items-start">
+			<img class="img-fluid mx-5" style="width: 170px; border-radius: 180px" src="assets/images/photo.png" alt="">
+			<div class="d-flex flex-column mt-3">
+				<h2 class="fs-4 text-primary">Мартыненко Климент Дмитриевич</h2>
+				<p class="text-dark mb-1"><i class="bi bi-bookmark-check-fill text-primary"></i> Студент группы ЭФБО-12-24</p>
+				<p class="text-dark mb-4">Факультет информационных технологий, специальность "Веб-разработка"</p>
+				<div class="stack ">
+					<span class="fw-bold bg-primary text-white rounded-3 px-2 py-1 fw-semibold">HTML/CSS</span>
+					<span class="fw-bold text-white rounded-3 px-2 py-1 fw-semibold" style="background-color: #ffd500">JavaScript</span>
+					<span class="fw-bold text-white rounded-3 px-2 py-1 fw-semibold" style="background-color: #8c00ff">Bootstrap</span>
+					<span class="fw-bold text-white rounded-3 px-2 py-1 fw-semibold" style="background-color: #37c3ff">React</span>
+				</div>
 			</div>
 		</div>
-
-	</main>
-
-	<!-- FOOTER -->
-	<footer class="footer">
-		<div class="footer__text">Футер</div>
-	</footer>
-
-</div>
+	</div>
+	<div class="card bg-white shadow-sm rounded-2 mt-5 border">
+		<div class="card-header">
+			<h2 class="fs-5 mb-0"><i class="bi bi-person-circle text-primary me-2"></i>Обо мне</h2>
+		</div>
+		<div class="card-body">
+			<p class="mb-0">Я увлекаюсь веб-разработкой и изучаю современные технологии.
+					В свободное время занимаюсь созданием пет-проектов и изучаю новые фреймворки.
+					Мои основные интересы: фронтенд разработка, UX/UI дизайн. Стремлюсь к созданию
+					качественных и удобных пользовательских интерфейсов.
+			</p>
+		</div>
+	</div>
+	<div class="card bg-white shadow-sm rounded-2 mt-5 border">
+		<div class="card-header">
+			<h2 class="fs-5 mb-0"><i class="bi bi-tools text-primary me-2"></i>Мои навыки</h2>
+		</div>
+		<div class="card-body">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="mb-3">
+						<div class="d-flex justify-content-between mb1">
+							<span class="mb-1">HTML/CSS</span>
+							<span class="text-primary">90%</span>
+						</div>
+						<div class="progress" style="height: 8px;">
+							<div class="progress-bar bg-primary"
+							     style="width: 90%"></div>
+						</div>
+					</div>
+					<div class="mb-3">
+						<div class="d-flex justify-content-between mb1">
+							<span class="mb-1">Javascript</span>
+							<span class="text-primary">75%</span>
+						</div>
+						<div class="progress" style="height: 8px;">
+							<div class="progress-bar"
+							     style="width: 75%;  background-color: #ffd500"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="mb-3">
+						<div class="d-flex justify-content-between mb1">
+							<span class="mb-1">Bootstrap</span>
+							<span class="text-primary">85%</span>
+						</div>
+						<div class="progress" style="height: 8px;">
+							<div class="progress-bar"
+							     style="width: 85%; background-color: #8c00ff"></div>
+						</div>
+					</div>
+					<div class="mb-3">
+						<div class="d-flex justify-content-between mb1">
+							<span class="mb-1">React</span>
+							<span class="text-primary">70%</span>
+						</div>
+						<div class="progress" style="height: 8px;">
+							<div class="progress-bar"
+							     style="width: 70%;  background-color: #37c3ff"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card bg-white shadow-sm rounded-2 mt-5 border">
+		<div class="card-header">
+			<h2 class="fs-5 mb-0"><i class="bi bi-folder-fill text-primary me-2"></i>Мои проекты</h2>
+		</div>
+		<div class="card-body">
+			<div class="row g-3">
+				<div class="col-md-4">
+					<div class="card h-100">
+						<img class="card-img-top" src="assets/images/product.png" alt="img"  style="height: 150px; object-fit: cover;">
+						<div class="card-body">
+							<h3 class="fs-5 card-title">Личный сайт</h3>
+							<p class="mb-4">Сайт-портфолио на HTML, CSS и Bootstrap с адаптивным дизайном</p>
+							<div class="mb-2 stack ">
+								<span class="fw-bold bg-primary text-white rounded-3 px-2 py-1 fw-semibold">HTML/CSS</span>
+								<span class="fw-bold bg-primary text-white rounded-3 px-2 py-1 fw-semibold">JavaScript</span>
+								<span class="fw-bold bg-primary text-white rounded-3 px-2 py-1 fw-semibold">Bootstrap</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card h-100">
+						<img class="card-img-top" src="assets/images/product.png" alt="img"  style="height: 150px; object-fit: cover;">
+						<div class="card-body">
+							<h3 class="fs-5 card-title">Todo приложение</h3>
+							<p class="mb-4">Приложение для управления задачами с использованием Javascript</p>
+							<div class="mb-2 stack ">
+								<span class="fw-bold text-white rounded-3 px-2 py-1 fw-semibold" style="background-color: #ffd500">JavaScript</span>
+								<span class="fw-bold text-white rounded-3 px-2 py-1 fw-semibold" style="background-color: #ffd500">Localstorage</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card h-100">
+						<img class="card-img-top" src="assets/images/product.png" alt="img"  style="height: 150px; object-fit: cover;">
+						<div class="card-body">
+							<h3 class="fs-5 card-title">Интернет магазин</h3>
+							<p class="mb-4">Прототип интернет-магазина с корзиной товаров и фильтрацией</p>
+							<div class="mb-2 stack ">
+								<span class="fw-bold text-white rounded-3 px-2 py-1 fw-semibold" style="background-color: #8c00ff">React</span>
+								<span class="fw-bold text-white rounded-3 px-2 py-1 fw-semibold" style="background-color: #8c00ff">API</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<footer class="bg-dark text-white py-3 mt-5">
+	<div class="container text-center">
+		&copy; 2025 Портфолио студента. Все права защищены.
+	</div>
+</footer>
 </body>
-<audio id="mySound" src="assets/dm.mp3"></audio>
-<script src="./index.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </html>

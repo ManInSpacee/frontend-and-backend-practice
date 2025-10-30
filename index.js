@@ -5,6 +5,8 @@ const submitBtn = document.getElementById('SubmitBtn');
 const form = document.getElementById('feedbackForm');
 const themeToggle = document.getElementById('theme-toggle');
 const sound = document.getElementById('mySound');
+
+
 themeToggle.addEventListener('click', () => {
   sound.currentTime = 0;
   themeToggle.classList.toggle('active');
